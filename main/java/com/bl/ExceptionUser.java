@@ -69,5 +69,19 @@ public class ExceptionUser
 			Matcher matcher = pattern.matcher(str);
 			return matcher.matches();
 		}
+		
+		/**
+		 * created method pNumber and passing parameter in this it will check phone
+		 * Number is valid or not result will be in true or false because method is
+		 * boolean type
+		 * 
+		 * @param str -passing phone number
+		 * @return -return to method created
+		 */
+		public boolean pNumber(String str) {
+			Pattern pattern = Pattern.compile("91\\s[0-9]{10}");
+			Matcher matcher = pattern.matcher(str);
+			return matcher.matches();
+		}
 	
 	}

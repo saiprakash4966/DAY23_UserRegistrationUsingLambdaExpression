@@ -45,7 +45,7 @@ public class ExceptionUserTest
 	 * created method givenLName_IsProper_ReturnFalse() for false condition
 	 */
 	public void givenLName_IsProper_ReturnFalse() {
-		boolean actualResult = exUS.LName("Beemari");
+		boolean actualResult = exUS.LName("beemari");
 		Assert.assertEquals(false, actualResult);
 	}
 }

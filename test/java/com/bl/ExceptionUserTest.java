@@ -80,8 +80,29 @@ public class ExceptionUserTest
 	 * created method givenPhNumber_IsNotProper_ReturnFalse() for false
 	 * condition
 	 */
-	public void givenPhNumber_IsNotProper_ReturnFalse() {
+	public void givenPhNumber_IsNotProper_ReturnFalse() 
+	{
 		boolean actualResult = exUS.pNumber("91 96761131690");
+		Assert.assertEquals(false, actualResult);
+	}
+	@Test
+	/**
+	 * created method givePassword_IsProper_ReturnTrue() for true condition
+	 */
+	public void givenPassword_IsProper_ReturnTrue() 
+	{
+		boolean actualResult = exUS.password("sssaaiii");
+		Assert.assertEquals(true, actualResult);
+	}
+
+	@Test
+	/**
+	 * created method givePassword_IsNotProper_ReturnFalse() for false
+	 * condition
+	 */
+	public void givenPassword_IsNotProper_ReturnFalse() 
+	{
+		boolean actualResult = exUS.password("saip");
 		Assert.assertEquals(false, actualResult);
 	}
 }

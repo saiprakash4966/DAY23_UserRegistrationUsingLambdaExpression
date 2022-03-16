@@ -78,8 +78,22 @@ public class ExceptionUser
 		 * @param str -passing phone number
 		 * @return -return to method created
 		 */
-		public boolean pNumber(String str) {
+		public boolean pNumber(String str) 
+		{
 			Pattern pattern = Pattern.compile("91\\s[0-9]{10}");
+			Matcher matcher = pattern.matcher(str);
+			return matcher.matches();
+		}
+		/**
+		 * created method Password and passing parameter in this it will check
+		 * Password is valid or not result will be in true or false because method is
+		 * boolean type
+		 * 
+		 * @param password- passing password
+		 * @return -return to method created
+		 */
+		public boolean password(String str) {
+			Pattern pattern = Pattern.compile("[a-zA-Z]{8,}");
 			Matcher matcher = pattern.matcher(str);
 			return matcher.matches();
 		}

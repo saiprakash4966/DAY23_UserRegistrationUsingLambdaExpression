@@ -124,4 +124,22 @@ public class ExceptionUserTest
 		boolean actualResult = exUS.password1("saiprakash");
 		Assert.assertEquals(false, actualResult);
 	}
+	@Test
+	/**
+	 * created method givePassword2_IsProper_ReturnTrue() for true condition
+	 */
+	public void givenPasswordRule3_IsProper_ReturnTrue() {
+		boolean actualResult = exUS.password2("Saipraksh4966");
+		Assert.assertEquals(true, actualResult);
+	}
+
+	@Test
+	/**
+	 * created method givePassword2_IsNotProper_ReturnFalse() for false
+	 * condition
+	 */
+	public void givenPassword2_IsNotProper_ReturnFalse() {
+		boolean actualResult = exUS.password2("saiprakash");
+		Assert.assertEquals(false, actualResult);
+	}
 }

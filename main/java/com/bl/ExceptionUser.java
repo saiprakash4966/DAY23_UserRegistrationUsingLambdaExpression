@@ -110,4 +110,18 @@ public class ExceptionUser
 			Matcher matcher = pattern.matcher(str);
 			return matcher.matches();
 		}
+		/**
+		 * created method Password2 and passing parameter in this it will check
+		 * Password is valid or not having Minimum 8 Characters and first letters should
+		 * be capital with one numeric number in that result will be in true or false
+		 * because method is boolean type
+		 * 
+		 * @param password- passing password
+		 * @return -return to method created
+		 */
+		 public boolean password2(String str) {
+		        Pattern pattern = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$");
+		        Matcher matcher = pattern.matcher(str);
+		        return matcher.matches();
+		    }
 	}

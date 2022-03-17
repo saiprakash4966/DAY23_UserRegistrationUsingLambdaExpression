@@ -14,7 +14,7 @@ public class ExceptionUserTest
 		/**
 		 * calling fName method to see fName is valid or not
 		 */
-		boolean actualResult = exUS.fName("Saiprakash");
+		boolean actualResult = exUS.firstName("Saiprakash");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -24,7 +24,7 @@ public class ExceptionUserTest
 	 */
 	public void givenFName_IsProper_ReturnFalse() 
 	{
-		boolean actualResult = exUS.fName("saiprakash");
+		boolean actualResult = exUS.firstName("saiprakash");
 		Assert.assertEquals(false, actualResult);
 	}
 	@Test
@@ -36,7 +36,7 @@ public class ExceptionUserTest
 		/**
 		 * calling LName method to see last name is valid or not
 		 */
-		boolean actualResult = exUS.LName("Beemari");
+		boolean actualResult = exUS.lastName("Beemari");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -45,7 +45,7 @@ public class ExceptionUserTest
 	 * created method givenLName_IsProper_ReturnFalse() for false condition
 	 */
 	public void givenLName_IsProper_ReturnFalse() {
-		boolean actualResult = exUS.LName("beemari");
+		boolean actualResult = exUS.lastName("beemari");
 		Assert.assertEquals(false, actualResult);
 	}
 	
@@ -71,7 +71,7 @@ public class ExceptionUserTest
 	 * created method givenPhNumber_IsProper_ReturnTrue() for true condition
 	 */
 	public void givenPhNumber_IsProper_ReturnTrue() {
-		boolean actualResult = exUS.pNumber("91 9676113169");
+		boolean actualResult = exUS.phoneNumber("91 9676113169");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -82,7 +82,7 @@ public class ExceptionUserTest
 	 */
 	public void givenPhNumber_IsNotProper_ReturnFalse() 
 	{
-		boolean actualResult = exUS.pNumber("91 96761131690");
+		boolean actualResult = exUS.phoneNumber("91 96761131690");
 		Assert.assertEquals(false, actualResult);
 	}
 	@Test
@@ -111,7 +111,7 @@ public class ExceptionUserTest
 	 * created method givePassword1_IsProper_ReturnTrue() for true condition
 	 */
 	public void givenPassword1_IsProper_ReturnTrue() {
-		boolean actualResult = exUS.password1("Saiprakash");
+		boolean actualResult = exUS.password("Saiprakash");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -121,7 +121,7 @@ public class ExceptionUserTest
 	 * condition
 	 */
 	public void givenPassword1_IsNotProper_ReturnFalse() {
-		boolean actualResult = exUS.password1("saiprakash");
+		boolean actualResult = exUS.password("saiprakash");
 		Assert.assertEquals(false, actualResult);
 	}
 	@Test
@@ -129,7 +129,7 @@ public class ExceptionUserTest
 	 * created method givePassword2_IsProper_ReturnTrue() for true condition
 	 */
 	public void givenPassword2_IsProper_ReturnTrue() {
-		boolean actualResult = exUS.password2("Saipraksh4966");
+		boolean actualResult = exUS.password("Saipraksh4966");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -139,7 +139,7 @@ public class ExceptionUserTest
 	 * condition
 	 */
 	public void givenPassword2_IsNotProper_ReturnFalse() {
-		boolean actualResult = exUS.password2("saiprakash");
+		boolean actualResult = exUS.password("saiprakash");
 		Assert.assertEquals(false, actualResult);
 	}
 	@Test
@@ -147,7 +147,7 @@ public class ExceptionUserTest
 	 * created method givePassword3_IsProper_ReturnTrue() for true condition
 	 */
 	public void givenPassword3_IsProper_ReturnTrue() {
-		boolean actualResult = exUS.password3("Saiprakash@4966");
+		boolean actualResult = exUS.password("Saiprakash@4966");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -157,7 +157,7 @@ public class ExceptionUserTest
 	 * condition
 	 */
 	public void givenPassword3_IsNotProper_ReturnFalse() {
-		boolean actualResult = exUS.password3("Saiprakash");
+		boolean actualResult = exUS.password("Saiprakash");
 		Assert.assertEquals(false, actualResult);
 	}
 }

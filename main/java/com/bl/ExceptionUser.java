@@ -97,5 +97,17 @@ public class ExceptionUser
 			Matcher matcher = pattern.matcher(str);
 			return matcher.matches();
 		}
-	
+		/**
+		 * created method Password1 and passing parameter in this it will check
+		 * Password is valid or not result will be in true or false because method is
+		 * boolean type
+		 * 
+		 * @param password- passing password
+		 * @return -return to method created
+		 */
+		public boolean password1(String str) {
+			Pattern pattern = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z]).{8,}$");
+			Matcher matcher = pattern.matcher(str);
+			return matcher.matches();
+		}
 	}

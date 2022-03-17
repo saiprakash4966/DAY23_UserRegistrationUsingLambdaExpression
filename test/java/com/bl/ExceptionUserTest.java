@@ -110,7 +110,7 @@ public class ExceptionUserTest
 	/**
 	 * created method givePassword1_IsProper_ReturnTrue() for true condition
 	 */
-	public void givenPasswordRule2_IsProper_ReturnTrue() {
+	public void givenPassword1_IsProper_ReturnTrue() {
 		boolean actualResult = exUS.password1("Saiprakash");
 		Assert.assertEquals(true, actualResult);
 	}
@@ -128,7 +128,7 @@ public class ExceptionUserTest
 	/**
 	 * created method givePassword2_IsProper_ReturnTrue() for true condition
 	 */
-	public void givenPasswordRule3_IsProper_ReturnTrue() {
+	public void givenPassword2_IsProper_ReturnTrue() {
 		boolean actualResult = exUS.password2("Saipraksh4966");
 		Assert.assertEquals(true, actualResult);
 	}
@@ -140,6 +140,24 @@ public class ExceptionUserTest
 	 */
 	public void givenPassword2_IsNotProper_ReturnFalse() {
 		boolean actualResult = exUS.password2("saiprakash");
+		Assert.assertEquals(false, actualResult);
+	}
+	@Test
+	/**
+	 * created method givePassword3_IsProper_ReturnTrue() for true condition
+	 */
+	public void givenPassword3_IsProper_ReturnTrue() {
+		boolean actualResult = exUS.password3("Saiprakash@4966");
+		Assert.assertEquals(true, actualResult);
+	}
+
+	@Test
+	/**
+	 * created method givePassword3_IsNotProper_ReturnFalse() for false
+	 * condition
+	 */
+	public void givenPassword3_IsNotProper_ReturnFalse() {
+		boolean actualResult = exUS.password3("Saiprakash");
 		Assert.assertEquals(false, actualResult);
 	}
 }
